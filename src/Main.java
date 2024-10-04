@@ -41,7 +41,7 @@ public class Main {
             //Capturando dado do usuario
             String podeVoar = sc.next();
             boolean voar;
-            if (podeVoar.equals("Sim")) {
+            if (podeVoar.equalsIgnoreCase("Sim")) {
                 voar = true;
             } else {
                 voar = false;
@@ -85,7 +85,7 @@ public class Main {
                 //Capturando dado do usuario
                 String temPelo = sc.next();
                 boolean pelo;
-                if (temPelo.equals("Sim")) {
+                if (podeVoar.equalsIgnoreCase("Sim")) {
                     pelo = true;
                 } else {
                     pelo = false;
@@ -128,7 +128,7 @@ public class Main {
                     //Capturando dado do usuario
                     String eVenenoso = sc.next();
                     boolean veneno;
-                    if (eVenenoso.equals("Sim")) {
+                    if (podeVoar.equalsIgnoreCase("Sim")) {
                         veneno = true;
                     } else {
                         veneno = false;
