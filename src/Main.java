@@ -78,7 +78,7 @@ public class Main {
                     System.out.print("Idade: ");
                     //Capturando dado do usuario
                     int idadeMamifero = sc.nextInt();
-                    System.out.print("Pode Voar Sim ou Não: ");
+                    System.out.print("Tem pelo (Sim ou Não): ");
                     //Capturando dado do usuario
                     String temPelo = sc.next();
                     boolean pelo;
