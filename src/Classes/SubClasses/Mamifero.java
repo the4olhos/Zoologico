@@ -30,6 +30,6 @@ public class Mamifero extends Animal {
                 + "Nome: " + this.getNome()
                 + "Espécie: " + this.getEspecie()
                 + "Idade: " + this.getIdade()
-                + "Tem pelo: " + getTemPelo() ;
+                + "Tem pelo: " + this.getTemPelo();
     }
 }
