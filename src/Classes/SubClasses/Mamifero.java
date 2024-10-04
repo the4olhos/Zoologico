@@ -1,21 +1,23 @@
-package Classes;
+package Classes.SubClasses;
 
-public class Reptil extends Animal {
+import Classes.Animal;
 
-    private boolean venenoso;
+public class Mamifero extends Animal {
 
-    public Reptil(String nome, String especie, int idade, boolean venenoso){
+    private boolean temPelo;
+
+    public Mamifero(String nome, String especie, int idade, boolean temmPelo){
         super(nome, especie, idade);
-        this.venenoso = venenoso;
+        this.temPelo = temPelo;
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Emitindo sons de Réptil");
+        System.out.println("Emitindo sons de animal mamífero");
     }
 
-    public String getVenenoso(){
-        if (venenoso) {
+    public String getTemPelo(){
+        if (temPelo) {
             return "Sim";
         } else {
             return "Não";
@@ -28,6 +30,6 @@ public class Reptil extends Animal {
                 + "Nome: " + this.getNome()
                 + "Espécie: " + this.getEspecie()
                 + "Idade: " + this.getIdade()
-                + "É venenoso: " + getVenenoso() ;
+                + "Tem pelo: " + getTemPelo() ;
     }
 }

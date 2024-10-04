@@ -16,12 +16,12 @@ public class Animal {
     }
 
     //Metodos Especiais
-    public void emitirSom(){
+    public void emitirSom() {
         System.out.println("Emitindo Som");
     }
 
     // Metodo padrao toString
-    public String toString(){
+    public String toString() {
         return "Informações do Animal"
                 + "\nNome: " + this.getNome()
                 + "\nEspecie: " + this.getEspecie()
@@ -52,37 +52,5 @@ public class Animal {
 
     public void setIdade(int idade) {
         this.idade = idade;
-    }
-
-    public static class Mamífero extends Animal{
-
-        public boolean temPelo;
-
-        public Mamifero(this.temPelo){
-            super(nome, especie, idade);
-            this.temPelo = temPelo;
-        }
-
-        @Override
-        public void emitirSom() {
-            System.out.println("Emitindo sons de animal mamífero");
-        }
-
-        public String getTemPelo(this.temPelo){
-            if (temPelo) {
-                return "Sim";
-            } else {
-                return "Não";
-            }
-        }
-
-        @Override
-        public String toString(){
-            return "Informações do Mamífero"
-                    + "Nome: " + this.getNome()
-                    + "Espécie: " + this.getEspecie()
-                    + "Idade: " + this.getIdade()
-                    + "Tem pelo: " + getTemPelo() ;
-        }
     }
 }
