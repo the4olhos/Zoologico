@@ -27,9 +27,9 @@ public class Reptil extends Animal {
     @Override
     public String toString(){
         return "Informações do Mamífero:"
-                + "Nome: " + this.getNome()
-                + "Espécie: " + this.getEspecie()
-                + "Idade: " + this.getIdade()
-                + "É venenoso: " + getVenenoso() ;
+                + "\nNome: " + this.getNome()
+                + "\nEspécie: " + this.getEspecie()
+                + "\nIdade: " + this.getIdade()
+                + "\nÉ venenoso: " + getVenenoso() ;
     }
 }

@@ -1,6 +1,7 @@
 import Classes.Animal;
 import Classes.SubClasses.Ave;
 import Classes.SubClasses.Mamifero;
+import Classes.SubClasses.Reptil;
 
 import java.util.Scanner;
 
@@ -17,7 +18,7 @@ public class Main {
         quantidadeAve = sc.nextInt();
 
         while(quantidadeAve == 0){
-            System.out.print("A quantidade não pode ser 0: ");
+            System.out.println("A quantidade não pode ser 0 ");
             System.out.print("Quantas Aves voce deseja cadastrar: ");
             quantidadeAve = sc.nextInt();
         }
@@ -60,10 +61,10 @@ public class Main {
             System.out.print("Quantos Mamiferos você deseja cadastrar: ");
             quantidadeMamiferos = sc.nextInt();
 
-            while(quantidademamiferos == 0){
-                System.out.print("A quantidade não pode ser 0: ");
+            while(quantidadeMamiferos == 0){
+                System.out.println("A quantidade não pode ser 0 ");
                 System.out.print("Quantos Mamiferos voce deseja cadastrar: ");
-                quantidadeMamifero = sc.nextInt();
+                quantidadeMamiferos = sc.nextInt();
             }
             
             //Criando Array de Mamiferos
@@ -90,7 +91,7 @@ public class Main {
                     pelo = false;
                 }
                 //Objeto criado
-                ave[j] = new Ave(nomeMamifero, especieMamifero, idadeMamifero, pelo);
+                mamifero[j] = new Mamifero(nomeMamifero, especieMamifero, idadeMamifero, pelo);
                 System.out.println(mamifero[j].toString());
 
 
@@ -104,10 +105,10 @@ public class Main {
                 System.out.print("Quantos Repteis você deseja cadastrar: ");
                 quantidadeReptil = sc.nextInt();
 
-                Animal[] reptil = new Mamifero[quantidadeReptil];
+                Animal[] reptil = new Reptil[quantidadeReptil];
 
                 while(quantidadeReptil == 0){
-                    System.out.print("A quantidade não pode ser 0: ");
+                    System.out.println("A quantidade não pode ser 0: ");
                     System.out.print("Quantos repteis você deseja cadastrar: ");
                     quantidadeReptil = sc.nextInt();
                 }
@@ -123,7 +124,7 @@ public class Main {
                     System.out.print("Idade: ");
                     //Capturando dado do usuario
                     int idadeReptil = sc.nextInt();
-                    System.out.print("Pode Voar Sim ou Não: ");
+                    System.out.print("É venenoso (Sim ou Não): ");
                     //Capturando dado do usuario
                     String eVenenoso = sc.next();
                     boolean veneno;
@@ -133,7 +134,7 @@ public class Main {
                         veneno = false;
                     }
                     //Objeto criado
-                    ave[k] = new Ave(nomeReptil, especieReptil, idadeReptil, veneno);
+                    reptil[k] = new Ave(nomeReptil, especieReptil, idadeReptil, veneno);
                     System.out.println(reptil[k].toString());
                 }
             }

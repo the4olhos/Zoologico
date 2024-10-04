@@ -6,7 +6,7 @@ public class Mamifero extends Animal {
 
     private boolean temPelo;
 
-    public Mamifero(String nome, String especie, int idade, boolean temmPelo){
+    public Mamifero(String nome, String especie, int idade, boolean temPelo){
         super(nome, especie, idade);
         this.temPelo = temPelo;
     }
@@ -27,9 +27,9 @@ public class Mamifero extends Animal {
     @Override
     public String toString(){
         return "Informações do Mamífero:"
-                + "Nome: " + this.getNome()
-                + "Espécie: " + this.getEspecie()
-                + "Idade: " + this.getIdade()
-                + "Tem pelo: " + this.getTemPelo();
+                + "\nNome: " + this.getNome()
+                + "\nEspécie: " + this.getEspecie()
+                + "\nIdade: " + this.getIdade()
+                + "\nTem pelo: " + this.getTemPelo();
     }
 }
