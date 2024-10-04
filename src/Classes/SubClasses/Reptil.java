@@ -30,6 +30,6 @@ public class Reptil extends Animal {
                 + "\nNome: " + this.getNome()
                 + "\nEspécie: " + this.getEspecie()
                 + "\nIdade: " + this.getIdade()
-                + "\nÉ venenoso: " + getVenenoso() ;
+                + "\nÉ venenoso: " + this.getVenenoso() ;
     }
 }
