@@ -108,7 +108,7 @@ public class Main {
                 Animal[] reptil = new Reptil[quantidadeReptil];
 
                 while(quantidadeReptil == 0){
-                    System.out.println("A quantidade não pode ser 0: ");
+                    System.out.println("A quantidade não pode ser 0 ");
                     System.out.print("Quantos repteis você deseja cadastrar: ");
                     quantidadeReptil = sc.nextInt();
                 }
@@ -134,7 +134,7 @@ public class Main {
                         veneno = false;
                     }
                     //Objeto criado
-                    reptil[k] = new Ave(nomeReptil, especieReptil, idadeReptil, veneno);
+                    reptil[k] = new Reptil(nomeReptil, especieReptil, idadeReptil, veneno);
                     System.out.println(reptil[k].toString());
                 }
             }
